@@ -20,13 +20,13 @@ terraform {
     organization = "Thrinkshive"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "crc-frontend"
     }
   }
 }
 
 resource "aws_s3_bucket" "banks" {
-  bucket = "keenson-bk-mnakjs"
+  bucket = "keenson-bk-mnaknew"
 
   tags = {
     Name        = "My bucket"
