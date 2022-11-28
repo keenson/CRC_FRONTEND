@@ -26,8 +26,8 @@ terraform {
 }
 
 
-resource "aws_s3_bucket" "b" {
-  bucket = "keenson-bk"
+resource "aws_s3_bucket" "banks" {
+  bucket = "keenson-bk-mnakj"
 
   tags = {
     Name        = "My bucket"
@@ -36,7 +36,7 @@ resource "aws_s3_bucket" "b" {
 }
 
 resource "aws_s3_bucket_acl" "example" {
-  bucket = aws_s3_bucket.b.id
+  bucket = aws_s3_bucket.banks.id
   acl    = "private"
 }
 
