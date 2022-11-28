@@ -27,7 +27,7 @@ terraform {
 
 
 resource "aws_s3_bucket" "banks" {
-  bucket = "keenson-bk-mnakj"
+  bucket = "keenson-bk-mnakjs"
 
   tags = {
     Name        = "My bucket"
