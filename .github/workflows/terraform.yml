@@ -95,7 +95,7 @@ jobs:
       
   s3-sync:
     name: 'Deploy Site'
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-18.04    
     needs: terraform
 
     steps:
