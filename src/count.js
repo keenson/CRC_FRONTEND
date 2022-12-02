@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
     
     
-    const apiGateway = 'https://0h8zc5wfl1.execute-api.us-east-1.amazonaws.com/';
+    const apiGateway = 'https://0tccbk0gn8.execute-api.us-east-1.amazonaws.com/';
     
     const getVisitCount = () => {
     let count = 1;
