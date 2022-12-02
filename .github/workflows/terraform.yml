@@ -99,10 +99,13 @@ jobs:
     needs: terraform
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: run s3-sync
        
         run: |
-          aws s3 sync src/ s3://www.olalekanfadele.xyz
+          aws s3 sync ./src s3://www.olalekanfadele.xyz
           aws cloudfront create-invalidation --distribution-id ${{secrets.CLOUDFRONT_DIST}} --paths "/*"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
